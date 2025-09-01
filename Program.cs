@@ -28,7 +28,7 @@ var summaries = new[]
 app.MapGet("/weatherforecast", () =>
 {
     app.Logger.LogInformation("Handling weather forecast request");
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
