@@ -1,0 +1,6 @@
+@LogItAll_HostAddress = http://localhost:5080
+
+GET {{LogItAll_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
