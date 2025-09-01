@@ -21,10 +21,3 @@ catch {
     Write-Host "Stack trace: $($_.Exception.StackTrace)"
 }
 Write-Host "`nExecution Ended.`n"
-
-# Write-Host "Getting weather forecast..."
-# $forecast = Invoke-RestMethod -Uri "http://localhost:5080/weatherforecast" -Method Get
-# Write-Host "`nReceived weather forecast:"
-# $forecast | ForEach-Object {
-#     Write-Host "- Date: $($_.date), Temperature: $($_.temperatureC) °C, Summary: $($_.summary)"
-# }
