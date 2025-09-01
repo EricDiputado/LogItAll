@@ -45,8 +45,3 @@ app.MapGet("/", () => "Application is running!");
 
 Console.WriteLine("Press Ctrl+C to shut down.");
 await app.RunAsync();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
